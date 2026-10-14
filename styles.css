@@ -373,3 +373,151 @@ h3{font-size:1.75rem}
   .floating-whatsapp span:last-child{display:none}
   .floating-whatsapp{width:48px;height:48px;padding:0;justify-content:center}
 }
+
+/* Identidade oficial Iza Resolve */
+.brand{
+  display:flex;
+  align-items:center;
+  margin-right:auto;
+}
+.brand img{
+  width:190px;
+  height:auto;
+}
+.hero-side-message{
+  position:relative;
+  min-height:360px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:46px;
+  border-radius:46% 46% 42% 42%;
+  border:1px solid rgba(197,106,74,.16);
+  background:rgba(255,252,246,.5);
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(5px);
+}
+.hero-side-script{
+  margin:0;
+  max-width:310px;
+  font-family:"Cormorant Garamond",Georgia,serif;
+  font-size:clamp(2.5rem,4.5vw,4.2rem);
+  line-height:.98;
+  font-style:italic;
+  color:var(--terra);
+}
+.hero-side-line{
+  width:78px;
+  height:1px;
+  margin:24px auto 16px;
+  background:var(--olive);
+}
+.hero-side-message>p:last-child{
+  margin:0;
+  color:var(--olive);
+  font-size:.76rem;
+  font-weight:700;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.section-heading-center{
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+}
+.section-heading-center>p:not(.eyebrow){
+  margin-left:auto;
+  margin-right:auto;
+}
+.service-grid-five{
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:14px;
+}
+.service-card-category{
+  min-height:390px;
+  padding:24px 20px;
+  text-align:center;
+  align-items:center;
+}
+.service-icon-img{
+  width:82px;
+  height:82px;
+  object-fit:contain;
+  margin:0 auto 20px;
+}
+.service-card-category h3{
+  font-size:1.65rem;
+  min-height:3.15rem;
+}
+.service-card-category p{
+  font-size:.88rem;
+}
+.service-card-category>a{
+  margin-top:auto;
+}
+.inline-cta{
+  margin-top:34px;
+}
+.inline-cta>div{
+  max-width:720px;
+}
+.contact-brand-panel{
+  min-height:220px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:28px;
+  border-radius:28px;
+  background:var(--sand);
+  position:relative;
+  z-index:1;
+}
+.contact-brand-panel img{
+  width:min(100%,260px);
+  height:auto;
+}
+.site-footer{
+  background:var(--sand);
+  color:var(--brown);
+  border-top:1px solid rgba(58,51,43,.1);
+}
+.footer-logo{
+  width:180px;
+  height:auto;
+}
+.site-footer a{
+  color:var(--olive);
+}
+.footer-small{
+  color:var(--muted);
+}
+.footer-slogan{
+  color:var(--brown);
+  font-size:.8rem;
+  font-weight:700;
+  letter-spacing:.08em;
+}
+
+@media(max-width:1100px){
+  .service-grid-five{grid-template-columns:repeat(3,1fr)}
+  .service-card-category{min-height:350px}
+}
+@media(max-width:960px){
+  .brand img{width:165px}
+  .hero-side-message{min-height:260px;max-width:520px}
+}
+@media(max-width:760px){
+  .service-grid-five{grid-template-columns:repeat(2,1fr)}
+  .service-card-category{min-height:340px}
+}
+@media(max-width:680px){
+  .brand img{width:145px}
+  .hero-side-message{display:none}
+}
+@media(max-width:540px){
+  .service-grid-five{grid-template-columns:1fr}
+  .service-card-category{min-height:auto;text-align:left;align-items:flex-start}
+  .service-icon-img{margin:0 0 18px}
+}
