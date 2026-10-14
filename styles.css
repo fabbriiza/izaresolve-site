@@ -521,3 +521,58 @@ h3{font-size:1.75rem}
   .service-card-category{min-height:auto;text-align:left;align-items:flex-start}
   .service-icon-img{margin:0 0 18px}
 }
+
+
+/* Revisão: retomar a leveza visual da primeira versão */
+.service-card-category .service-icon{
+  margin:0 auto 22px;
+  flex:0 0 auto;
+}
+.service-card-category{
+  background:rgba(255,255,255,.82);
+}
+.contact-card-clean{
+  min-height:unset;
+  grid-template-columns:220px 1fr;
+  gap:48px;
+  padding:46px 50px;
+  background:var(--sand);
+  color:var(--brown);
+  border:1px solid rgba(58,51,43,.10);
+  box-shadow:none;
+  border-radius:30px;
+}
+.contact-card-clean::after{
+  display:none;
+}
+.contact-logo-clean{
+  width:200px;
+  height:auto;
+  justify-self:center;
+}
+.contact-card-clean h2{
+  color:var(--brown);
+  margin-bottom:.3em;
+}
+.contact-card-clean p:not(.eyebrow){
+  color:var(--muted);
+  max-width:720px;
+}
+.email-link-clean{
+  color:var(--olive);
+}
+.contact-copy-clean{
+  position:relative;
+  z-index:1;
+}
+@media(max-width:760px){
+  .contact-card-clean{
+    grid-template-columns:1fr;
+    gap:24px;
+    padding:34px 28px;
+  }
+  .contact-logo-clean{
+    width:170px;
+    justify-self:start;
+  }
+}
